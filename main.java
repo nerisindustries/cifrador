@@ -8,7 +8,7 @@
             String frase = scanner.nextLine().toUpperCase();
 
             if (frase.length() > 47) {
-                System.out.println("Não é possivel cifrar, número maximo de caracteres excedido");
+                System.out.println("Não é possivel cifrar, número maximo de caracteres a mais que o permitido");
             } else {
                 char[] bank = {'Ã', 'Â', 'Á', 'Ä', 'Ë', 'É', 'Ê', 'Ö', 'Ô', 'Õ', 'Í', 'Ü', 'Ú', 'Ç'};
                 char[] banko = {'A', 'A', 'A', 'A', 'E', 'E', 'E', 'O', 'O', 'O', 'I', 'U', 'U', 'C'};
@@ -34,6 +34,6 @@
                 System.out.println("Frase formatada: " + novafrase);
             }
 
-            scanner.close();
-        }
-    }
+      scanner.close();
+   } 
+}

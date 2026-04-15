@@ -4,7 +4,7 @@
     public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Digite uma frase:");
+            System.out.println("Digite uma frase para cifrarmos:");
             String frase = scanner.nextLine().toUpperCase();
 
             if (frase.length() > 47) {
@@ -30,8 +30,20 @@
                         novafrase = novafrase + letraAtual;
                     }
                 }
+                int t = novafrase.length();
+                int r=0;
+                String fc ="";
+ for(int z = 0; z <t;z++){
+    fc= fc + novafrase.charAt(r); 
+    r = (r+3)% t;
+    
 
-                System.out.println("Frase formatada: " + novafrase);
+
+ }
+
+                  System.out.println("Mensagem cifrada!!!!!!: " + fc);
+
+
             }
 
       scanner.close();
